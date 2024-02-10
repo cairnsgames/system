@@ -1,0 +1,43 @@
+{
+  "name": "@cairnsgames/system",
+  "version": "1.0.0",
+  "description": "Cairnsgames, Feature Flags, Settings and Configuration System",
+  "keywords": [
+    "react",
+    "typescript",
+    "tenant"
+  ],
+  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cairnsgames/system.git"
+  },
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/esm/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm run build:esm && npm run build:cjs",
+    "build:esm": "tsc",
+    "build:cjs": "tsc --module commonjs --outDir dist/cjs"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.8.3",
+    "@types/react": "^18.2.22",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^5.2.2"
+  },
+  "peerDependencies": {
+    "react": ">=16"
+  },
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
+  "dependencies": {
+    "dotenv": "^16.3.1"
+  }
+}
